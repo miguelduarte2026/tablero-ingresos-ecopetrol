@@ -19,7 +19,7 @@ with col1:
     if archivo_excel is not None:
         try:
             # Leemos y mostramos el Excel
-          df = pd.read_excel(archivo_excel)
+            df = pd.read_excel(archivo_excel)
             st.dataframe(df, use_container_width=True)
             st.success("¡Base de datos cargada correctamente!")
         except Exception as e:
